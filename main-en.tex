@@ -1,0 +1,27 @@
+% !TEX root = main-en.tex
+
+\documentclass[11pt,a4paper]{scrreprt}
+
+\newcommand{\doclanguage}{english}
+
+\input{preamble/packages}
+\input{preamble/layout}
+\input{preamble/commands}
+\input{preamble/theoremstyles}
+
+\title{Script Title}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\input{chapters/en/01-limits}
+\input{chapters/en/02-continuity}
+
+\bibliographystyle{alpha}
+\bibliography{bibliography/references}
+
+\end{document}

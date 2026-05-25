@@ -1,0 +1,24 @@
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{example}[definition]{Beispiel}
+\newtheorem{exercise}[definition]{Aufgabe}
+
+\theoremstyle{plain}
+\newtheorem{theorem}[definition]{Satz}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Korollar}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Bemerkung}
+
+\newtcolorbox{importantbox}{
+    colback=red!5,
+    colframe=red!60!black,
+    title=Wichtig
+}
+
+\newtcolorbox{notebox}{
+    colback=blue!5,
+    colframe=blue!60!black,
+    title=Merke
+}
