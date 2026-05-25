@@ -1,24 +1,42 @@
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\newtheorem{example}[definition]{Beispiel}
-\newtheorem{exercise}[definition]{Aufgabe}
-
-\theoremstyle{plain}
-\newtheorem{theorem}[definition]{Satz}
-\newtheorem{lemma}[definition]{Lemma}
-\newtheorem{corollary}[definition]{Korollar}
-
-\theoremstyle{remark}
-\newtheorem*{remark}{Bemerkung}
-
-\newtcolorbox{importantbox}{
-    colback=red!5,
-    colframe=red!60!black,
-    title=Wichtig
+\mdfdefinestyle{redleftline}{
+    skipabove=20pt,
+    skipbelow=20pt,
+    hidealllines=true,
+    leftline=true,
+    linewidth=2pt,
+    linecolor=red!50!black,
+    frametitlefont=\color{red!50!black}\bfseries,
+    theoremseparator={},
+    theoremspace={\space\space}
 }
 
-\newtcolorbox{notebox}{
-    colback=blue!5,
-    colframe=blue!60!black,
-    title=Merke
+\mdfdefinestyle{blackleftline}{
+    skipabove=20pt,
+    skipbelow=20pt,
+    hidealllines=true,
+    leftline=true,
+    linewidth=2pt,
+    linecolor=black,
+    frametitlefont=\color{black}\bfseries,
+    theoremseparator={},
+    theoremspace={\space\space}
 }
+
+\mdfdefinestyle{minimalistic}{
+    skipabove=20pt,
+    skipbelow=20pt,
+    hidealllines=true,
+    theoremseparator={},
+    theoremspace={\space\space}
+}
+
+
+\mdtheorem[style=redleftline]{definition}{\definitionname}[chapter]
+\mdtheorem[style=blackleftline]{lemma}[definition]{\lemmaname}
+\mdtheorem[style=blackleftline]{proposition}[definition]{\propositionname}
+\mdtheorem[style=blackleftline]{corollary}[definition]{\corollaryname}
+\mdtheorem[style=blackleftline]{theorem}[definition]{\theoremname}
+\mdtheorem[style=redleftline]{fact}[definition]{\factname}
+\mdtheorem[style=minimalistic]{example}[definition]{\examplename}
+\mdtheorem[style=minimalistic]{exercise}[definition]{\exercisename}
+\mdtheorem[style=minimalistic]{proof}[definition]{\proofname}

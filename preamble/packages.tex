@@ -1,21 +1,23 @@
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[\doclanguage]{babel}
+\usepackage[T1]{fontenc} % font encoding for accented characters
+\usepackage[utf8]{inputenc} % input encoding for accented characters
+\usepackage[\doclanguage]{babel} % language support, e.g., for hyphenation and date formatting
 
-\usepackage{lmodern}
-\usepackage{microtype}
+\usepackage{amsmath} % advanced math typesetting
+\usepackage{mathtools} % extends amsmath with additional features
+\usepackage{amsthm} % theorem environments
+% \usepackage{amssymb} % additional math symbols (not needed if using newpxmath)
 
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage{mathtools}
+\usepackage{tgpagella} % TeX Gyre Pagella font, a serif font based on Palatino
+\usepackage{newpxmath} % math font that complements TeX Gyre Pagella
+\usepackage{microtype} % improves typography by adjusting spacing and kerning
 
-\usepackage{graphicx}
-\usepackage{tikz}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.18}
+\usepackage{graphicx} % for including graphics
+\usepackage{tikz} % for drawing diagrams
+\usepackage{pgfplots} % for creating plots and graphs
+\pgfplotsset{compat=1.18} % set compatibility level for pgfplots
 
-\usepackage{xcolor}
-\usepackage[most]{tcolorbox}
+\usepackage{xcolor} % for colored text and backgrounds
 
-\usepackage{hyperref}
+\usepackage[framemethod=tikz]{mdframed} % for creating framed boxes, e.g., for theorems and examples
+
+\usepackage{hyperref} % for hyperlinks in the document
