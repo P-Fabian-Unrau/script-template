@@ -1,0 +1,37 @@
+% !TEX root = main-en.tex
+
+\documentclass[11pt,a4paper]{book}
+
+\newcommand{\doclanguage}{english}
+
+\newcommand{\definitionname}{Definition}
+\newcommand{\lemmaname}{Lemma}
+\newcommand{\propositionname}{Proposition}
+\newcommand{\corollaryname}{Corollary}
+\newcommand{\theoremname}{Theorem}
+\newcommand{\factname}{Fact}
+\newcommand{\examplename}{Example}
+\newcommand{\exercisename}{Exercise}
+\newcommand{\proofname}{Proof}
+
+\input{preamble/packages}
+\input{preamble/layout}
+\input{preamble/commands}
+\input{preamble/theoremstyles}
+
+\title{Script Title}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\input{chapters/en/01-limits}
+\input{chapters/en/02-continuity}
+
+\bibliographystyle{alpha}
+\bibliography{bibliography/references}
+
+\end{document}
